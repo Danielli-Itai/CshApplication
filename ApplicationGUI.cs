@@ -24,6 +24,7 @@ namespace CshApplication
 			ResultText.Text = (num1 * num2).ToString();
 		}
 
+#if UNIT_TEST_ENA
 		public string CmdMultiply(string num1, string num2)
 		{
 			Number2Text.Text = num1;
@@ -33,5 +34,6 @@ namespace CshApplication
 
 			return ResultText.Text;
 		}
+#endif
 	}
 }
